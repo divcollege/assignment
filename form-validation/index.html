@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h1>Add Students</h1>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="name">Name</label> <span style="display: none;"
+                            class="alert alert-warning nameerr"></span>
+                        <input type="text" id="name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label> <span style="display: none;"
+                            class="alert alert-warning emailerr"></span>
+                        <input type="text" id="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <label><input type="radio" class="gender" name="gender" value="male" id="male"
+                                checked>Male</label>
+                        <label><input type="radio" class="gender" name="gender" value="female"
+                                id="female">Female</label>
+                    </div>
+                    <div class="form-group">
+                        <label>Language</label>
+                        <label><input type="checkbox" name="lang[]" id="lang" value="nepali"> Nepali</label>
+                        <label><input type="checkbox" name="lang[]" id="lang" value="english"> English</label>
+                        <label><input type="checkbox" name="lang[]" id="lang" value="chinese"> Chinese</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select name="country" id="country" class="form-control">
+                            <option disabled selected>Select a country</option>
+                            <option value="nepal">Nepal</option>
+                            <option value="china">China</option>
+                            <option value="us">Us</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success" id="myBtn">Add record</button>
+                    </div>
+                </form>
+                <div class="alert alert-danger message-validation"></div>
+            </div>
+            <div class="col-md-6 data-show"></div>
+        </div>
+    </div>
+
+    <script src="./custom.js"></script>
+</body>
+
+</html>
