@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+.image {
+  width: 100%;
+  margin: auto;
+}
+/* .imageClass {
+  width: 50%;
+} */
